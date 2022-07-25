@@ -34,7 +34,6 @@ type Wallets struct {
 }
 
 // ---------------------------------------------------------------- Functions --------------------------------
-
 func newKeyPair() (ecdsa.PrivateKey, []byte) {
 	curve := elliptic.P256()
 	privateKey, _ := ecdsa.GenerateKey(curve, rand.Reader)
